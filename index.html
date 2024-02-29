@@ -18,53 +18,42 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Description</label>
-                <textarea rows="3" class="form-control"> </textarea>
+                <textarea rows="3" class="form-control" id="inputDescription"> </textarea>
             </div>
             <div class="mb-3">
                 <label class="form-label">Color</label>
-                <input type="color" class="form-control">
+                <input type="color" class="form-control" id="inputColor">
             </div>
             <div class="mb-3">
                 <label class="form-label">Date</label>
-                <input type="datetime-local" class="form-control">
+                <input type="datetime-local" class="form-control" id="inputDate">
+            </div>
+            <input class="mb-3">
+                <label class="form-label">Budget</label>
+                <input  type="number" class="form-control" id="inputBudget"></input>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select class="form-control" id="inputStatus">
+                <option value="in-progress">In Progress</option>
+                <option value="queue">Queue</option>
+                <option value="terminated">Terminated</option>
+                <option value="finished">Finished</option>
+                </select>
             </div>
 
             <div>
-                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" id="btnSave">Save</button>
             </div>
         </section>
         <section id="form">
-            <div class="mb-3">
-                <label class="form-label">Title</label>
-                <input type="text" class="form-control" id="inputTitle">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Description</label>
-                <textarea rows="3" class="form-control"> </textarea>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Color</label>
-                <input type="color" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Date</label>
-                <input type="datetime-local" class="form-control">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Status</label>
-                <input type="status" class="form-control">
-            </div>
-
-
-            <div>
-                <button type="button" class="btn btn-primary">Save</button>
-            </div>
 
         </section>
 
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous">
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
