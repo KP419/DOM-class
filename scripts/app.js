@@ -11,13 +11,31 @@ const status = $("#inputStatus").val();
 
 console.log(title,description,date,budget,color,status);
 
-let x = new Task(title,description,color,date,status,budget);
-console.log(x)
+let task = new Task(title,description,color,date,status,budget);
+console.log(task)
 
 
 
 
 }
+
+function testRequest(){
+    $.ajax({
+        type: "POST",
+        url: "http://fsdiapi.azurewebsites.net/api/tasks/",
+        data: JSON.stringify(task),
+        contentType: "application/json",
+        success: function(response){
+            console.log(response);
+
+        },
+        error: function(error){
+            console.log(error);
+        }
+    });
+}
+
+
 function init(){
     console.log("this is a task manager");
 // load data
