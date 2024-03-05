@@ -19,52 +19,56 @@
     <link rel="stylesheet" href="./styles/app.css" />
   </head>
   <body>
-    <h1>Task Manager</h1>
-    <main>
-      <section id="list" class="container">
-        <div class="mb-3">
-          <label class="form-label" for="inputTitle">Title</label>
-          <input type="text" class="form-control" id="inputTitle" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="inputDescription">Description</label>
-          <textarea
-            rows="3"
-            class="form-control"
-            id="inputDescription"
-          ></textarea>
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="inputColor">Color</label>
-          <input type="color" class="form-control" id="inputColor" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="inputDate">Date</label>
-          <input
-            type="datetime-local"
-            class="form-control"
-            id="inputDate"
-          />
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="inputBudget">Budget</label>
-          <input type="number" class="form-control" id="inputBudget" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="inputStatus">Status</label>
-          <select class="form-control" id="inputStatus">
-            <option value="in-progress">In Progress</option>
-            <option value="queue">Queue</option>
-            <option value="terminated">Terminated</option>
-            <option value="finished">Finished</option>
-          </select>
-        </div>
-        <div class="d-grid gap-2">
-          <button type="button" class="btn btn-primary" id="btnSave">
-            Save
-          </button>
-        </div>
-      </section>
+    <h1 class="text-center my-4">Task Manager</h1>
+    <main class="container">
+      <div class="row justify-content-center">
+        <section id="list" class="col-md-8 col-lg-6">
+          <div class="mb-3">
+            <label class="form-label" for="inputTitle">Title</label>
+            <input type="text" class="form-control" id="inputTitle" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="inputDescription">Description</label>
+            <textarea
+              rows="3"
+              class="form-control"
+              id="inputDescription"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="inputColor">Color</label>
+            <input type="color" class="form-control" id="inputColor" />
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="inputDate">Date</label>
+              <input
+                type="datetime-local"
+                class="form-control"
+                id="inputDate"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="inputBudget">Budget</label>
+              <input type="number" class="form-control" id="inputBudget" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="inputStatus">Status</label>
+            <select class="form-control" id="inputStatus">
+              <option value="in-progress">In Progress</option>
+              <option value="queue">Queue</option>
+              <option value="terminated">Terminated</option>
+              <option value="finished">Finished</option>
+            </select>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary" id="btnSave">
+              Save
+            </button>
+          </div>
+        </section>
+      </div>
       <section id="form"></section>
     </main>
     <script
